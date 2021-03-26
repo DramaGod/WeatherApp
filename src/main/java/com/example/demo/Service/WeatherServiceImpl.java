@@ -58,35 +58,6 @@ public class WeatherServiceImpl implements WeatherService{
 
     }
 
- //   @Override
-    //public List<Coord>  fetch () throws Exception{
-
-//
-//        List<Coord> AllCoords = new ArrayList<Coord>();
-//        Request rawJson = call.request();
-//        JSONObject root= new JSONObject(rawJson);
-//        JSONArray coords = root.getJSONArray("coord");
-//        for (int i=0; i<coords.length(); i++){
-//            JSONObject JsonCoord = coords.getJSONObject(i);
-//            Coord coord= new Coord();
-//            String lon=JsonCoord.getString("lon");
-//            String lat=JsonCoord.getString("lat");
-//
-//            coord.setLat(lat);
-//            coord.setLat(lon);
-//            AllCoords.add(coord);
-//
-//        }
-//        GsonBuilder builder= new GsonBuilder();
-//        Gson gson= builder.create();
-//        BufferedReader bufferedReader=new BufferedReader();
-//        return AllCoords;
-       // return null;
-   // }
-
-
-
-
     public String getCityName() {
         return CityName;
     }
